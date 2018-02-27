@@ -1,0 +1,51 @@
+html,body{
+    height: 100%;
+}
+main{
+    position: absolute;
+    top: 65px;
+    left: 0px;
+    right: 0px;
+    height: calc(100% - 75px - 65px) !important;
+    margin-bottom: 100px;
+}
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 75px;
+}
+.side-nav{
+    top: 65px;
+    height: calc(100% - 75px - 65px) !important;
+}
+
+main{
+    padding-left: 300px;
+}
+
+#pageWrapper{
+    overflow: auto;
+    width: 100%;
+    height: 100%;
+}
+
+@media only screen and (max-width : 992px) {
+    main {
+        padding-left: 0;
+    }
+}
+
+/* remove this when footer fixed */
+form {
+    margin-bottom: 80px;
+}
+
+#grade-oversight{
+    background: cadetblue;
+    color: white;
+    padding: 10px;
+}
+#grade-oversight-submit {
+    margin: 5px 40% auto;
+}

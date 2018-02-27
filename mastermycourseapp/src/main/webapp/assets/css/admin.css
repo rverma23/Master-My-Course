@@ -1,0 +1,35 @@
+html,body{
+    height: 100%;
+}
+main{
+    position: absolute;
+    top: 65px;
+    left: 0px;
+    right: 0px;
+    margin-bottom: 85px;
+}
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 75px;
+}
+.side-nav{
+    top: 65px;
+    height: calc(100% - 75px - 65px) !important;
+}
+
+main{
+    padding-left: 300px;
+}
+
+#search{
+    padding-left: 20px;
+    width: 95%;
+}
+
+@media only screen and (max-width : 992px) {
+    main {
+        padding-left: 0;
+    }
+}

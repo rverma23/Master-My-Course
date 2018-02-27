@@ -1,0 +1,187 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>mastermycourse</groupId>
+  <artifactId>mastermycourse</artifactId>
+  <packaging>war</packaging>
+  <version>1.0-SNAPSHOT</version>
+  <name>mastermycourse Maven Webapp</name>
+  <url>http://maven.apache.org</url>
+    <properties>
+        <org.springframework-version>4.3.0.RELEASE</org.springframework-version>
+
+        <!-- [START auth] -->
+        <mastermycourse.clientID>62228642744-d2acfs521ah38phingjmpq6l0lui7oju.apps.googleusercontent.com</mastermycourse.clientID>             <!-- for User Authentication -->
+        <mastermycourse.clientSecret>fvLOQ7mlsWMMptE63UBwHmOX</mastermycourse.clientSecret> <!-- from g.co/cloud/console -->
+        <!-- Register in g.co/cloud/console -->
+        <!--<callback.host>mastermycourse.appspot.com</callback.host>  &lt;!&ndash; Typically projectname.appspot.com &ndash;&gt;-->
+        <!--<mastermycourse.callback>https://${callback.host}/LoginCallback</mastermycourse.callback>-->
+
+        <!--<callback.method>http</callback.method>       &lt;!&ndash; "http" for local, "https" for the cloud &ndash;&gt;-->
+        <callback.host>localhost:8080</callback.host> <!-- Typically projectname.appspot.com -->
+        <mastermycourse.callback>http://localhost:8080/LoginCallback</mastermycourse.callback>
+
+        <!-- [END auth] -->
+
+
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+    <build>
+        <plugins>
+            <plugin>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>2.3.2</version>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+
+      <dependency>
+          <groupId>org.codehaus.groovy</groupId>
+          <artifactId>groovy-all</artifactId>
+          <version>1.6-beta-2</version>
+          <scope>test</scope>
+      </dependency>
+      <!-- https://mvnrepository.com/artifact/com.amazonaws/aws-java-sdk -->
+      <dependency>
+          <groupId>com.amazonaws</groupId>
+          <artifactId>aws-java-sdk</artifactId>
+          <version>1.11.119</version>
+      </dependency>
+
+      <!-- https://mvnrepository.com/artifact/javazoom/jlayer -->
+      <dependency>
+          <groupId>javazoom</groupId>
+          <artifactId>jlayer</artifactId>
+          <version>1.0.1</version>
+      </dependency>
+
+      <dependency>
+          <groupId>jstl</groupId>
+          <artifactId>jstl</artifactId>
+          <version>1.2</version>
+      </dependency>
+
+      <!-- https://mvnrepository.com/artifact/com.paypal.sdk/paypal-core -->
+      <dependency>
+          <groupId>com.paypal.sdk</groupId>
+          <artifactId>paypal-core</artifactId>
+          <version>1.7.2</version>
+      </dependency>
+      <!-- https://mvnrepository.com/artifact/com.paypal.sdk/merchantsdk -->
+      <dependency>
+          <groupId>com.paypal.sdk</groupId>
+          <artifactId>merchantsdk</artifactId>
+          <version>2.15.122</version>
+      </dependency>
+
+      <dependency>
+      <groupId>org.apache.pdfbox</groupId>
+      <artifactId>pdfbox</artifactId>
+      <version>2.0.4</version>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/org.apache.pdfbox/pdfbox-tools -->
+    <dependency>
+      <groupId>org.apache.pdfbox</groupId>
+      <artifactId>pdfbox-tools</artifactId>
+      <version>2.0.4</version>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/net.sf.cssbox/pdf2dom -->
+    <dependency>
+      <groupId>net.sf.cssbox</groupId>
+      <artifactId>pdf2dom</artifactId>
+      <version>1.6</version>
+    </dependency>
+
+      <dependency>
+          <groupId>org.springframework</groupId>
+          <artifactId>spring-webmvc</artifactId>
+          <version>${org.springframework-version}</version>
+      </dependency>
+
+      <!-- https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api -->
+      <dependency>
+          <groupId>javax.servlet</groupId>
+          <artifactId>javax.servlet-api</artifactId>
+          <version>3.1.0</version>
+      </dependency>
+
+      <!-- https://mvnrepository.com/artifact/org.springframework/spring-jdbc -->
+      <dependency>
+          <groupId>org.springframework</groupId>
+          <artifactId>spring-jdbc</artifactId>
+          <version>4.3.7.RELEASE</version>
+      </dependency>
+
+      <dependency>
+          <groupId>commons-fileupload</groupId>
+          <artifactId>commons-fileupload</artifactId>
+          <version>1.2.2</version>
+      </dependency>
+
+      <!-- MySQL database driver -->
+      <dependency>
+          <groupId>mysql</groupId>
+          <artifactId>mysql-connector-java</artifactId>
+          <version>5.1.9</version>
+      </dependency>
+
+      <!-- email library -->
+      <!-- https://mvnrepository.com/artifact/org.springframework/spring-context-support -->
+      <dependency>
+          <groupId>org.springframework</groupId>
+          <artifactId>spring-context-support</artifactId>
+          <version>3.2.0.RELEASE</version>
+      </dependency>
+
+      <dependency>
+          <groupId>javax.activation</groupId>
+          <artifactId>activation</artifactId>
+          <version>1.1.1</version>
+      </dependency>
+      <dependency>
+          <groupId>commons-email</groupId>
+          <artifactId>commons-email</artifactId>
+          <version>1.0</version>
+      </dependency>
+      <dependency>
+          <groupId>javax.mail</groupId>
+          <artifactId>mail</artifactId>
+          <version>1.4.3</version>
+      </dependency>
+      <dependency>
+          <groupId>org.apache.commons</groupId>
+          <artifactId>commons-io</artifactId>
+          <version>1.3.2</version>
+      </dependency>
+      <!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-core -->
+      <dependency>
+          <groupId>com.fasterxml.jackson.core</groupId>
+          <artifactId>jackson-core</artifactId>
+          <version>2.8.7</version>
+      </dependency>
+      <!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind -->
+      <dependency>
+          <groupId>com.fasterxml.jackson.core</groupId>
+          <artifactId>jackson-databind</artifactId>
+          <version>2.8.7</version>
+      </dependency>
+
+      <dependency>
+          <groupId>org.json</groupId>
+          <artifactId>json</artifactId>
+          <version>20090211</version>
+      </dependency>
+
+  </dependencies>
+</project>

@@ -1,0 +1,80 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.movie_container, .login_container, .music_container{
+    background:#FFF;
+    padding:20px;
+    border-radius:25px;
+    margin-bottom: 10px;
+}
+
+.music_container h1, .music_container h2, .music_container h4{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.chatTable {
+    table-layout: fixed;
+    width: 100%;
+    word-wrap: break-word; 
+}
+
+.chatTable td {
+    padding: 10px;
+}
+
+.clear { clear: both; }
+
+.cover-art {
+    width: 100%;
+    max-width: 175px;
+}
+
+#header {
+    position: fixed;
+}
+
+#header .main-nav{
+    position: fixed;
+    right: 10px;
+}
+
+#header .nav-toggle{
+    position: fixed;
+    right: 10px;
+}
+
+.slicknav_btn {
+    position: fixed;
+    right: 10px;
+}
+
+#search-box{
+    background-color: rgba(200,200,200,0.5);
+}
+
+.clear_input{
+    font-size: 32px;
+}
+.fullwidth {
+    padding-top: 20px;
+}
+
+
+@media screen and (max-device-width: 480px){
+    .movie_container, .login_container{
+        padding: 10px;
+        border-radius:25px;
+        margin-bottom: 5px;
+    }
+
+    .login_container{
+        margin-top: 30px;
+        margin-left: 15px;
+
+    }
+    
+    .cover-art {        
+        max-width: 70px;
+    }
+}

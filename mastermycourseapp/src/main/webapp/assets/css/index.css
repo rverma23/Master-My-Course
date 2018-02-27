@@ -1,0 +1,98 @@
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+main {
+    height: calc(100% - 75px);
+    width: 100%;
+}
+
+footer{
+    position: fixed;
+    height: 75px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+#carouselHomePage, .carousel-item {
+    height: 100%;
+    width: 100%;
+}
+
+.carousel .carousel-item img{
+    zoom: 2;
+    display: block;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    /*margin-top: -14.5px;*/
+}
+
+.context-login h1{
+    margin: auto;
+    font-weight: bold;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    text-shadow: 1px 1px 1px #000;
+}
+
+.context-login h5{
+    max-width: 500px;
+    margin: auto;
+    font-weight: bold;
+    -webkit-text-stroke-width: 0.75px;
+    -webkit-text-stroke-color: black;
+    text-shadow: 1px 1px 1px #000;
+    margin-top: 10px;
+}
+
+#signInButton{
+    border-radius: 14px;
+}
+
+
+#login-register {
+    position: absolute;
+    top: 10px;
+    right:5px;
+    left: auto;
+    width: 250px;
+    height: 37px;
+}
+
+#title-carousel {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    height: 60px;
+    width: 300px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    text-shadow: 1px 1px 1px #000;
+}
+
+#title-carousel h4 {
+    font-weight: bold;
+    margin: 0;
+}
+
+.context-login {
+    background-color: red;
+    position: relative;
+    top: 100px;
+    height: 0px;
+}
+
+@media screen and (max-width: 480px) {
+    #login-register{
+        top: auto;
+        bottom: 55px;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+}
+
